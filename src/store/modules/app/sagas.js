@@ -5,7 +5,7 @@ import {
   getAllCharactersAction,
 } from './actions';
 import {App} from '../../services';
-import {createAction} from 'deox';
+// import {createAction} from 'deox';
 
 function* searchUsersSaga({payload}) {
   try {
@@ -36,12 +36,12 @@ function* AllCharactersSaga({payload}) {
   }
 }
 
-export const setErrors = createAction(
-  'errors/SET_ERROR',
-  resolve => payload => resolve(payload),
-);
+// export const setErrors = createAction(
+//   'errors/SET_ERROR',
+//   resolve => payload => resolve(payload),
+// );
 
-export const resetErrors = createAction('errors/RESET_ERRORS');
+// export const resetErrors = createAction('errors/RESET_ERRORS');
 
 export default function* watchApp() {
   yield takeLatest(searchUsersAction.request, searchUsersSaga);

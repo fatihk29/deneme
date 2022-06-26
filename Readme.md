@@ -8,6 +8,7 @@
 - Stack Navigator
 - Bottom-tabs Navigator
 
+## Some Pages From Applications
 # Character List Page 
 ![characterlist](https://user-images.githubusercontent.com/76162124/175819320-75037f9f-8edc-4486-969f-b11d57352424.PNG)
 

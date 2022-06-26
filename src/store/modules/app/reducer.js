@@ -12,7 +12,7 @@ export const initialStateApp = {
   loadingContact: false,
   generalError: null,
   searchUser: {},
-  episodeDetail: {},
+  episodeDetail: [],
   allCharacters: [],
 };
 
@@ -39,7 +39,7 @@ export const appReducer = createReducer(initialStateApp, handleAction => [
     }),
   ),
 
-  // searchUsersAction
+  // Episode Detail Action
   handleAction(getEpisodeDetailAction.request, state =>
     produce(state, draft => {
       draft.episodeDetail = {};

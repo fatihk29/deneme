@@ -3,8 +3,6 @@ import {combineReducers} from 'redux';
 import {persistReducer} from 'redux-persist';
 import {appReducer} from '../modules/app/reducer';
 
-// 'modules/app/reducer';
-
 const rootPersistConfig = {
   key: 'root',
   storage: AsyncStorage,
