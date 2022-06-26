@@ -1,12 +1,8 @@
 import React from 'react';
 import {View, Text, TouchableOpacity, Image} from 'react-native';
-// import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-
 import styles from './styles';
 
 const CharacterCard = ({item, onPress}) => {
-  // console.log('q123 item', item);
-
   return (
     <TouchableOpacity
       testID="CharacterCard"

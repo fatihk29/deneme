@@ -1,10 +1,10 @@
 import React, {useEffect, useCallback} from 'react';
 import {useRoute} from '@react-navigation/native';
 import {getEpisodeDetailAction} from '../../store/modules/app/actions';
-import {View, Text, FlatList, I} from 'react-native';
+import {View, Text, FlatList} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 
-const EpisodeDetails = props => {
+const EpisodeDetails = () => {
   const {params} = useRoute();
 
   const dispatch = useDispatch();

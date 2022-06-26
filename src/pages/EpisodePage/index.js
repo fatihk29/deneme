@@ -1,16 +1,10 @@
 import React, {useEffect, useCallback, useRef} from 'react';
-import {
-  View,
-  FlatList,
-  Text,
-  StatusBar,
-  StyleSheet,
-  Platform,
-} from 'react-native';
+import {FlatList, Platform} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import {useNavigation} from '@react-navigation/native';
 import {searchUsersAction} from '../../store/modules/app/actions';
 import {EpisodeCard} from '../../components/EpisodeCard';
+import styles from './styles';
 
 const EpisodePage = () => {
   const dispatch = useDispatch();
@@ -53,25 +47,8 @@ const EpisodePage = () => {
       contentContainerStyle={styles.list}
       keyExtractor={item => `${item.id}`}
       onEndReachedThreshold={Platform.OS === 'ios' ? 0 : 0.2}
-      // onEndReached={loadMoreHandler}
     />
   );
 };
 
 export default EpisodePage;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    marginTop: StatusBar.currentHeight || 0,
-  },
-  item: {
-    backgroundColor: '#f9c2ff',
-    padding: 20,
-    marginVertical: 8,
-    marginHorizontal: 16,
-  },
-  title: {
-    fontSize: 32,
-  },
-});

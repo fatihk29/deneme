@@ -11,7 +11,6 @@ import {
   Image,
 } from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
-import {useNavigation} from '@react-navigation/native';
 import {getAllCharactersAction} from '../../store/modules/app/actions';
 import {CharacterCard} from '../../components/CharacterCard';
 
@@ -30,17 +29,13 @@ const CharacterList = () => {
     dispatch(getAllCharactersAction.request({}));
   }, [dispatch]);
 
-  // console.log('q123 allCharacters', allCharacters);
-
   const onPress = item => {
-    console.log('q123 ', 'tikla', item);
     setChoosen(item);
     setModalVisible(prev => !prev);
   };
 
   return (
     <FlatList
-      // ref={flatlistRef}
       ListHeaderComponent={() => {
         return (
           <ModalComp
