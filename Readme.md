@@ -1,4 +1,12 @@
-Rick And Morty
+# Rick And Morty
+
+## React Native
+### Dependencies
+- redux-saga
+- redux
+- axios 
+- Stack Navigator
+- Bottom-tabs Navigator
 
 # Character List Page 
 ![characterlist](https://user-images.githubusercontent.com/76162124/175819320-75037f9f-8edc-4486-969f-b11d57352424.PNG)
